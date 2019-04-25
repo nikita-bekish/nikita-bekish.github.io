@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script src='https://www.google.com/recaptcha/api.js?render=6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In' async defer></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
+    
+</head>
+<body>
+    <section class="activity-bar">
+        <div class="activity-bar-block">
+            <ul class="activity-bar-list">
+                <li class="activity-bar-menu-item" onclick="widthExplorer()">
+                    <img src="img/icons/activity/File.svg" alt="">
+                </li>
+                <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`Contact`); changeContent(`.contact-main-content`);">
+                    <img src="img/icons/activity/Found.svg" alt="">
+                </li>
+                <li class="activity-bar-menu-item">
+                    <img src="img/icons/activity/Tool.svg" alt="">
+                </li>
+                <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`WhatIdo`); changeContent(`.what-i-do-content`);">
+                    <img src="img/icons/activity/Juk.svg" alt="">
+                </li>
+                <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`Works`); changeContent(`.works-main-content`);">
+                    <img src="img/icons/activity/Coub.svg" alt="">
+                </li>
+            </ul>           
+        </div>
+    </section>
+
+    <section class="explorer" id="explorer">
+        <h2 class="activity-bar-caption activity-bar-h2">explorer</h2>
+        <div class="explorer-open-pages" onclick="imgChange(`open-portfolio-nb`,
+        `img/Polygon.png`,`img/DownPolygon.png`,`menu`);">
+            <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-portfolio-nb">
+            <h3 class="activity-bar-caption activity-bar-h3">portfolio nikita bekish</h3>
+        </div>
+        <div class="explorer-menu">
+                <ul class="explorer-menu-ul" id="menu" onclick="listView(this);">
+                    <li class="menu-item first-level" id="aboutMe" onclick="clearMenuItem();
+                     clickMenuItem(`AboutMe`); changeContent(`.about-me-main-content`);">
+                     <div class="icon-div">
+                        <img src="img/icons/javascript.svg" alt="">
+                     </div>
+                     about_me.js</li>
+                    <li class="menu-item first-level" id="whatIDo" onclick="clearMenuItem();
+                     clickMenuItem(`WhatIdo`); changeContent(`.what-i-do-content`);">
+                     <div class="icon-div" id="defaultIcon">
+                        <img src="img/icons/default.svg" alt="">
+                     </div>
+                     what_i_do.txt</li>
+                    <li class="menu-item first-level" id="works" onclick="clearMenuItem();
+                     clickMenuItem(`Works`); changeContent(`.works-main-content`); showItems();
+                     worksImgChange(`open-works-item`,`img/DownPolygon.png`,`works-items`);">
+                     <div id="open-block-works-div">
+                        <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-works-item">
+                     </div>
+                     works
+                     </li>
+                    <ul class="works-ul" id="works-items">
+                        <li class="works-ul-li second-level">
+                            <div class="works-icon-div" id="">
+                                <img src="img/works/link.svg" alt="">
+                            </div>
+                            <a href="">advertise site</a>
+                        </li>
+                        <li class="works-ul-li second-level">
+                            <div class="works-icon-div" id="">
+                                <img src="img/works/link.svg" alt="">
+                            </div>
+                            <a href="">toastmaster site</a>
+                        </li>
+                        <li class="works-ul-li second-level">
+                            <div class="works-icon-div" id="">
+                                <img src="img/works/link.svg" alt="">
+                            </div>
+                            <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank">photographer site</a>
+                        </li>
+                    </ul>
+                    <li class="menu-item first-level" id="skills" onclick="clearMenuItem();
+                     clickMenuItem(`Skills`); showSkills(); skillsImgChange(`open-skills-item`,`img/DownPolygon.png`,`skills-items`);">                     
+                    <div id="open-block-skills-div">
+                        <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-skills-item">
+                    </div>                     
+                    skills
+                    </li>
+                     <ul class="works-ul" id="skills-items">
+                        <li class="skills-ul-li second-level">
+                        <div class="skills-icon-div" id="">
+                            <img src="img/icons/skills/html.svg" alt="" class="skills-icons">
+                        </div>                       
+                        HTML5</li>
+                        <li class="skills-ul-li second-level">
+                        <div class="skills-icon-div" id="">
+                            <img src="img/icons/skills/css.svg" alt="" class="skills-icons">
+                        </div>                        
+                        CSS3</li>
+                        <li class="skills-ul-li second-level">
+                        <div class="skills-icon-div" id="">
+                            <img src="img/icons/skills/js.svg" alt="" class="skills-icons js-icon">
+                        </div> 
+                        JavaScript</li>
+                    </ul>
+                    <li class="menu-item first-level" id="contact" onclick="clearMenuItem();
+                     clickMenuItem(`Contact`); changeContent(`.contact-main-content`);">
+                     <div class="icon-div">
+                        <img src="img/icons/html.svg" alt="">
+                     </div>
+                     contact.html</li>
+                </ul>
+            </div>
+    </section>
+    <section class="content-block" id="content-block">
+        <div class="tab" id="tab">
+            <h3 class="activity-bar-caption tab-caption" id="AboutMe">about_me.js</h3>            
+            <h3 class="activity-bar-caption tab-caption" id="WhatIdo">what_i_do.txt</h3>
+            <h3 class="activity-bar-caption tab-caption" id="Works">works</h3>
+            <h3 class="activity-bar-caption tab-caption" id="Skills">skills</h3>
+            <h3 class="activity-bar-caption tab-caption" id="Contact">contact.html</h3>
+        </div>
+        <div class="tab-line" id="tab-line"></div>
+
+        <div class="main-content" id="main-content">
+
+            <!--ABOUT ME TAB-->
+
+           <div class="about-me-main-content">
+            <div class="numbering" id="numbering">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                </ul>
+            </div>
+
+            <div class="wrapper"> 
+
+                <span id="typed"></span>
+                <span id="typed1"></span>
+                <span id="typed2"></span>
+                <span id="typed3"></span>
+                <span id="typed4"></span>
+                <span id="typed5"></span>
+                <span id="typed6"></span>
+                <span id="typed7"></span>
+                <span id="typed8"></span>
+                <span id="typed9"></span>
+                <span id="typed10"></span>
+                <span id="typed11"></span>
+                <span id="typed12"></span>
+                <span id="typed13"></span>
+
+            </div>
+           </div>
+
+           <!--WHAT I DO TAB-->
+
+           <div class="what-i-do-content">
+               <div class="myHistory">
+                    <img src="asd.png" alt="">
+               </div>
+           </div>
+
+           <!--WORKS TAB-->
+
+           <div class="works-main-content">
+               <div class="works-header">
+                   <div class="works-image">
+                    <img src="img/works/header.svg" alt="">
+                    <img src="img/works/image.svg" alt="">
+                   </div>
+                   <h2 class="works-caption">my works</h2>
+                   <p class="works-paragraph">
+                        Front-end | Nikita Bekish | <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                   </p>
+                   <p class="works-about-page-paragraph">
+                       All of my works you can see on this page
+                   </p>
+                   
+               </div>
+               <div class="works-line"></div>
+               <div class="works-recent-projects">
+                   <h2 class="works-recent-projects-caption">Recent projects</h2>
+                   <div class="works-border-block">
+                        <ul class="works-list">
+                            <li>
+                                <div class="works-border">
+                                        <img src="img/sites/advertise.jpg" alt="">
+                                </div>
+                                <div class="works-li-txt">
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="works-border">
+                                    <img src="img/sites/toastmaster-site.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="works-border">
+                                        <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank"><img src="img/sites/photosite.jpg" alt=""></a>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+           </div>
+
+           <!--CONTACT TAB-->
+
+           <div class="contact-main-content">
+                <div class="numbering-contact">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                    </ul>
+                </div>
+                <div class="html-contact">
+                    <p class="html-contact-text">
+                            &lt;!<span class="red">DOCTYPE</span> <span class="green">html</span>&gt; <br>
+                            &lt;<span class="red">html</span> <span class="green">lang</span>=<span class="gold">"en"</span>&gt; <br>
+                            &lt;<span class="red">head</span>&gt; <br>
+                        </p>
+                        <p class="html-contact-text-2">
+                            &lt;<span class="red">meta</span> <span class="green">charset</span>=<span class="gold">"UTF-8"</span>&gt; <br>
+                            &lt;<span class="red">meta</span> <span class="green">name</span>=<span class="gold">"viewport"</span> <span class="green">content</span>=<span class="gold">"width=device-width, initial-scale=1.0"</span>&gt; <br>
+                            &lt;<span class="red">meta</span> <span class="green">http-equiv</span>=<span class="gold">"X-UA-Compatible"</span> <span class="green">content</span>=<span class="gold">"ie=edge"</span>&gt; <br>
+                            &lt;<span class="red">title</span>&gt;Document&lt;/<span class="red">title</span>&gt; <br>
+                        </p>  
+                        <p class="html-contact-text">
+                            &lt;/<span class="red">head</span>&gt; <br>
+                            &lt;<span class="red">body</span>&gt; <br> 
+                            <span class="grey">&lt;!--To enter your information put it in terminal--&gt;</span>
+                        </p> 
+                        <p class="html-contact-text-2">
+                            &lt;<span class="red">h2</span>&gt;<span id="nameSpan"></span>&lt;/<span class="red">h2</span>&gt; <br>
+                            &lt;<span class="red">a</span> <span class="green">href</span>=<span class="gold">"mailto:<span id="emailSpan"></span>"</span>&gt;your link&lt;/<span class="red">a</span>&gt;
+                        </p> 
+                        <p class="html-contact-text-2">
+                            &lt;<span class="red">p</span>&gt;<br><textarea cols="50" rows="5" id="messageSpan" disabled="disabled"></textarea><br />&lt;/<span
+                                class="red">p</span>&gt; <br>
+                        </p>
+                        <p class="html-contact-text">
+                            &lt;/<span class="red">body</span>&gt; <br>
+                            &lt;/<span class="red">html</span>&gt;
+                        </p>
+                </div>
+                <div class="power-shell">
+                    <div class="power-shell-tabs">
+                        <p onclick="clearBorderBottom(); borderBottom(`name`); changePowerShellContent(`.name-content`);" id="name">name</p>
+                        <p onclick="clearBorderBottom(); borderBottom(`eMail`); changePowerShellContent(`.email-content`);" id="eMail" ;>e-mail</p>
+                        <p onclick="clearBorderBottom(); borderBottom(`message`); changePowerShellContent(`.message-content`);" id="message">message</p>
+                        <p onclick="clearBorderBottom(); borderBottom(`send`); changePowerShellContent(`.send-content`);" id="send">send message</p>
+                        <!---->
+                    </div>
+                </div>
+              
+                    <div class="power-shell-content" id="shell">
+                        <div class="name-content">
+                            <form action="mail.php" method="POST">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
+                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="new-password" onblur="consoleSpan(this, `nameSpan`)"; >
+                                <input type="text" name="user_email" id="shadyEmail">
+                                <input type="text" name="user_text" id="shadyTextInfo">
+                                <button type="submit" id="shadyBtn">send</button>
+                                <!--сделать скрытые инпуту и в них заносить инфу с разных вкладок-->
+                            </form>
+                        </div>
+                        <div class="email-content">                             
+                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="new-password" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; >                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
+                        </div>
+                        <div class="message-content">                            
+                            <span>&gt;</span>                                                                                          <!--onkeypress="return runScript(`messageTextarea`, `messageSpan`, event);"-->                                                          
+                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="5" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
+                        </div>
+                        <div class="send-content">
+                            <div class="g-recaptcha" data-sitekey="6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In"></div>
+                            <button type="submit" id="btn">send message</button>
+                        </div>
+                    </div>
+            
+           </div>
+        </div>
+        
+    </section>
+    
+    <!--script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
