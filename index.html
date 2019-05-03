@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js?render=6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In' async defer></script>
     <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
     
@@ -41,7 +42,7 @@
         <h2 class="activity-bar-caption activity-bar-h2">explorer</h2>
         <div class="explorer-open-pages" onclick="imgChange(`open-portfolio-nb`,
         `img/Polygon.png`,`img/DownPolygon.png`,`menu`);">
-            <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-portfolio-nb">
+            <img src="img/DownPolygon.png" alt="" class="arrows explorer-arrows" id="open-portfolio-nb">
             <h3 class="activity-bar-caption activity-bar-h3">portfolio nikita bekish</h3>
         </div>
         <div class="explorer-menu">
@@ -127,7 +128,9 @@
             <h3 class="activity-bar-caption tab-caption" id="Skills">skills</h3>
             <h3 class="activity-bar-caption tab-caption" id="Contact">contact.html</h3>
         </div>
-        <div class="tab-line" id="tab-line"></div>
+        <div class="tab-line" id="tab-line">
+            <p>version 0.9</p>
+        </div>
 
         <div class="main-content" id="main-content">
 
@@ -180,7 +183,26 @@
 
            <div class="what-i-do-content">
                <div class="myHistory">
-                    <img src="asd.png" alt="">
+                    <div class="text-about-me">
+                        <p> <span id="firstP">Я, Никита Бекиш, впервые услышал о веб-разработке во время учебы в колледже, а профессионально
+                            заинтересовался уже учась в БГУИР.</span><br /> 
+                            <span id="secondP">После переезда в июне 2018 в город Минск я принял решение что-то изменить в своей жизни.
+                                Выбор пал на развитие своих умений которыми я некогда увлекался еще когда учился в ПГЭК.</span> 
+                            Кстати говоря учился я на специальность ПОИТ и получил квалификацию техник-программист. <br />
+                            <span id="thirdP">Начиная с середины июня 2018 я углубленно начал изучать HTML и CSS по видеокурсам, различным 
+                                обучающим приложениям и статьям. </span> Также не обходил стороной Javascript и библиотеку jQuery. По 
+                            немногу начал осваивать Git. Познакомился с фреймворком Bootstrap. В одном из видеоуроков узнал
+                            о препроцессоре Less и стал активно его использовать.
+                            Конечно, верстка занятие не из самых веселых, но так или иначе я знаю к чему мне нужно стремиться
+                            и моя мотивация не уменьшилась - скорее наоборот. 
+                            Стоит сказать, что помимо своего хобби - на данный момент я прохожу обучение в БГУИР и параллельно 
+                            прохожу распределение, потому некоторое понятие о C# и MSSQL у меня имеется. <br />
+                            <span id="fourthP">В программировании</span> меня привлекает решение сложных задач потому что для этого нужно проявлять 
+                            логику, смекалку и широкий кругозор. Чаще всего я пользуюсь наиболее коротким и рациональным путем. 
+                            Но иногда нахожу парадоксальные решения и это то, что мне нравится.
+                        </p>
+                        <img src="qr.jpg" alt="">
+                    </div>
                </div>
            </div>
 
@@ -327,6 +349,13 @@
         </div>
         
     </section>
+
+    <nav class="site-navigation">
+        <img src="favicon.png" alt="">
+    </nav>
+    <main class="mob-main">
+        
+    </main>
     
     <!--script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script-->
     <script src="js/jquery-3.3.1.js"></script>
