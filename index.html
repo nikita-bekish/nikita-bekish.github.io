@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js?render=6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In' async defer></script>
     <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
-    
+    <script src="js/forms.js"></script>
 </head>
 <body>
     <section class="activity-bar">
@@ -324,7 +324,7 @@
               
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
-                            <form action="mail.php" method="POST">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
+                            <form action="" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
                                 &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="new-password" onblur="consoleSpan(this, `nameSpan`)"; >
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
