@@ -127,7 +127,7 @@ body {
 }
 .explorer-menu-ul li {
     display: flex;
-    width: calc(100% - 27px);
+    /*width: calc(100% - 27px);*/
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -202,9 +202,6 @@ body {
     display: none;
     width: 100%;
     padding-left: 0;
-}
-.works-ul li {
-    width: calc(100% - 42px);
 }
 .works-ul li a {
     color: #B0B0B0;
