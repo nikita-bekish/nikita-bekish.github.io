@@ -873,7 +873,7 @@ body {
 
 .vscode-img {
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -892,6 +892,9 @@ body {
 }
 @media screen and (max-width: 414px) {
     .site-navigation {
+        display: flex;
+    }
+    .vscode-img {
         display: flex;
     }
     .mob-main {
