@@ -878,13 +878,12 @@ body {
     display: none;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     height: 70px;
     top: 0;
-    
+    z-index: 2;
 }
 .vscode-img img {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -892,9 +891,15 @@ body {
     height: 50px;
     right: 15px;
 }
+#up {
+    display: none;
+}
 @media screen and (max-width: 414px) {
     .site-navigation {
         display: flex;
+    }
+    #up {
+        display: block;
     }
     .vscode-img {
         display: flex;

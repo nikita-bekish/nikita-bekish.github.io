@@ -364,13 +364,18 @@ var typed1 = new Typed('#typed13', {
     loop: false
 })
 
+
 // jQuery
 
 $('.menu-btn').on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass('menu-btn_active');
     $('.site-menu').toggleClass('menu_active');
-   
   });
-
+  
+  $("body").on('click','[href*="#"]', function(e) {
+    var fixed_offset = 100;
+    $('html,body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+    e.preventDefault();
+});
 
