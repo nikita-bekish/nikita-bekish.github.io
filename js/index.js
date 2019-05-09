@@ -364,6 +364,13 @@ var typed1 = new Typed('#typed13', {
     loop: false
 })
 
+// jQuery
 
+$('.menu-btn').on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('menu-btn_active');
+    $('.site-menu').toggleClass('menu_active');
+   
+  });
 
 
