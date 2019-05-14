@@ -100,7 +100,7 @@ function widthExplorer () {
     tabLine = document.getElementById(`tab-line`);
     mainContent = document.getElementById(`main-content`); 
 
-    if (x) {
+    if (x && window.screen.width >= 768) {
         id.style.width = '20%';
 
         tab.style.left = '25%';
@@ -110,7 +110,7 @@ function widthExplorer () {
 
         mainContent.style.left = '25%';
         mainContent.style.width = '75%';
-    } else {
+    } else if (!x && window.screen.width >= 768) {
         id.style.width = '0%';
 
         tab.style.left = '5%';
@@ -121,6 +121,32 @@ function widthExplorer () {
 
         mainContent.style.left = '5%';
         mainContent.style.width = '95%';
+    } else if (x && window.screen.width <= 414) {
+        id.style.width = '100%';
+
+        tab.style.left = '50px';
+        tab.style.display = 'none';
+
+        tabLine.style.display = 'none';
+        tabLine.style.left = '100px';
+        tabLine.style.width = '100%';
+
+        mainContent.style.left = '50px';
+        mainContent.style.width = '0%'; 
+        mainContent.style.display = 'none';       
+    } else if (!x && window.screen.width <= 414) {
+        id.style.width = '0%';
+
+        tab.style.left = '50px';
+        tab.style.display = 'flex';
+
+        tabLine.style.display = 'flex';
+        tabLine.style.left = '100px';
+        tabLine.style.width = '100%';
+
+        mainContent.style.left = '50px';
+        mainContent.style.width = '100%'; 
+        mainContent.style.display = 'block';  
     }
     x = !x;
 }

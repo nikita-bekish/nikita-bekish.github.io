@@ -724,6 +724,7 @@ body {
     height: 100%;
     margin-left: 15px;
     line-height: 1.5;
+    margin-top: 10px;
 }
 .myHistory p {
     font-family: Roboto, monospace;
@@ -895,25 +896,25 @@ body {
     display: none;
 }
 @media screen and (max-width: 414px) {
-    .site-navigation {
-        display: flex;
-    }
-    #up {
-        display: block;
-    }
-    .vscode-img {
-        display: flex;
-    }
-    .mob-main {
-        display: block;
-    }
-    .content-block {
-        display: none;
-    }
+
     .activity-bar {
-        display: none;
+        width: 50px;
     }
     .explorer {
+        width: 100%;
+        left: 50px;
+        transition: 0.5s;
+    }
+    .main-content {
         display: none;
+        transition: 0.5s;
+    }
+    .tab-line {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .tab-line p {
+        right: 0;
     }
 }
