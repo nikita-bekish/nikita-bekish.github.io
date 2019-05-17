@@ -174,6 +174,11 @@ function showSkills() {
 }
 
 function changeContent(realContent) {
+    id = document.getElementById(`explorer`);
+    tab = document.getElementById(`tab`);
+    tabLine = document.getElementById(`tab-line`);
+    mainContent = document.getElementById(`main-content`); 
+
     var arr = [`.about-me-main-content`,`.contact-main-content`, `.works-main-content`, `.what-i-do-content`];
 
     for (var i = 0; i < arr.length; i++) {
@@ -187,11 +192,32 @@ function changeContent(realContent) {
 
     real = document.querySelectorAll(realContent + ` > *`);
 
+    
+
     for (var i = 0; i < real.length; i++) {
         real[i].style.display = `block`;
     }
 
-    
+    if (window.screen.width <= 414) {
+        id = document.getElementById(`explorer`);
+
+        id.style.width = '0%';
+        
+
+        tab.style.left = '50px';
+        tab.style.display = 'flex';
+
+        tabLine.style.display = 'flex';
+        tabLine.style.left = '100px';
+        tabLine.style.width = '100%';
+
+        mainContent.style.left = '50px';
+        mainContent.style.width = '100%'; 
+        mainContent.style.display = 'block'; 
+    } else {
+        return
+    }
+    x = !x;
 }
 
 function borderBottom(id) {

@@ -90,6 +90,7 @@ body {
     height: 100%;
     background: #252426;
     border-right: 1px solid #000;
+    transition: 0.1s;
 }
 .explorer-open-pages {
     display: flex;
@@ -224,6 +225,8 @@ body {
 }
 .tab {
     position: fixed;
+    display: flex;
+    align-items: center;
     width: 15%;
     height: 44px;
     background: #1E1E1E;
@@ -236,7 +239,7 @@ body {
     font-size: 14px;
     color: #FFFFFF;
     text-transform: none;
-    margin: 11px 0 0 13px;
+    margin-left: 13px;
     display: none;
     transition: .7s;
 }
@@ -903,11 +906,11 @@ body {
     .explorer {
         width: 100%;
         left: 50px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     .main-content {
         display: none;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     .tab-line {
         display: none;
@@ -916,5 +919,14 @@ body {
     }
     .tab-line p {
         right: 0;
+    }
+    .tab {
+        display: none;
+        right: 0;
+        width: 40%;
+    }
+    .text-about-me {
+        width: 80%;
+        overflow-y: scroll;
     }
 }
