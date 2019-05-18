@@ -90,7 +90,7 @@ body {
     height: 100%;
     background: #252426;
     border-right: 1px solid #000;
-    transition: 0.1s;
+  
 }
 .explorer-open-pages {
     display: flex;
@@ -898,6 +898,9 @@ body {
 #up {
     display: none;
 }
+.mob-wrapper {
+    display: none;
+}
 @media screen and (max-width: 414px) {
 
     .activity-bar {
@@ -906,11 +909,10 @@ body {
     .explorer {
         width: 100%;
         left: 50px;
-        transition: 0.1s;
+        height: 100vh;
     }
     .main-content {
         display: none;
-        transition: 0.1s;
     }
     .tab-line {
         display: none;
@@ -928,5 +930,38 @@ body {
     .text-about-me {
         width: 80%;
         overflow-y: scroll;
+    }
+    .activity-bar-block {
+        height: 100vh;
+    }
+    .activity-bar {
+        height: 100vh;
+    }
+    .html-contact p {
+        display: none;
+    }
+    #typed, #typed1,#typed2,#typed3,#typed4,#typed5,#typed6, 
+    #typed7,#typed8,#typed9,#typed10,#typed11,#typed12,#typed13 {
+        display: none;
+    }
+    #wrap-per {
+        display: none;
+        height: 0;
+    }
+    .mob-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .mob-wrapper p {
+        color: white;
+        font-size: 11px;
+        line-height: 1.47;
+        display: flex;
+        align-items: center;
+        height: 19.55px;
+    }
+    .mob-first-level {
+        
+        margin-left: 50px;
     }
 }
