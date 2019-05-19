@@ -716,6 +716,10 @@ body {
 }
 .myHistory {
     display: none;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: calc(100% - 44px);
 }
 .myHistory img {
     width: 150px;
@@ -963,5 +967,47 @@ body {
     .mob-first-level {
         
         margin-left: 50px;
+    }
+    .works-li-txt {
+        display: none;
+    }
+    .works-border {
+        width: calc(100% - 50px);
+        
+    }
+    .works-recent-projects h2 {
+        width: calc(100% - 50px);
+        padding: 0;
+        text-align: center;
+    }
+    .works-caption {
+        display: none;
+    }
+    .works-paragraph {
+        display: none;
+    }
+    .works-about-page-paragraph {
+        display: none;
+    }
+
+    .works-header {
+        width: calc(100% - 50px);
+        height: 150px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .works-mob-image {
+        width: calc(100% - 50px);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 23px;
+    }
+    .works-mob-image img {
+        position: absolute;
     }
 }
