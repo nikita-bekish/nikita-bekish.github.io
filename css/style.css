@@ -1045,10 +1045,22 @@ body {
     .power-shell-content input {
         display: none;
     }
-    .numbering-contact li{
+    .numbering-contact li {
         display: none;
     }
     #reviewForm {
         display: none;
     }
+    .mob-input {
+        width: calc(100% - 100px);
+        padding: 10px;
+    }
+    .contact-mob-content {
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+    .form-control {
+        margin-right: 10px;
+    }
+    
 }
