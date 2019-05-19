@@ -922,8 +922,13 @@ body {
 .works-image p {
     display: none;
 }
+.mob-input {
+    display: none !important;
+}
 @media screen and (max-width: 414px) {
-
+    .form-control {
+        display: block;
+    }
     .activity-bar {
         width: 50px;
     }
@@ -1063,6 +1068,7 @@ body {
         display: none;
     }
     .mob-input {
+        display: flex !important;
         width: calc(100% - 100px);
         padding: 10px;
     }
