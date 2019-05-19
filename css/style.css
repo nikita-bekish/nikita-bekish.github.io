@@ -134,6 +134,17 @@ body {
     font-size: 15px;
     line-height: 30px;
 }
+.menu-item a {
+    color: #B0B0B0;
+    text-decoration: none;
+}
+.menu-item a:hover {
+    color: #B0B0B0;
+    text-decoration: none;
+}
+#pdf {
+    filter: invert(1);
+}
 .icon-div {
     display: flex;
     justify-content: center;
@@ -1059,8 +1070,6 @@ body {
         width: calc(100% - 50px);
         height: 100%;
     }
-    .form-control {
-        margin-right: 10px;
-    }
+    
     
 }
