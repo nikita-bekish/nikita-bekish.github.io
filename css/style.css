@@ -696,8 +696,8 @@ body {
 .works-list img {
     display: flex;
     align-items: center;
-    width: 140px;
-    height: 200px;
+    width: 265px;
+    height: 150px;
 }
 .works-list li {
     width: 100%;
