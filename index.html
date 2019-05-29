@@ -11,7 +11,7 @@
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src='https://www.google.com/recaptcha/api.js?render=6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In' async defer></script>
     <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
     <script src="js/forms.js"></script>
@@ -95,29 +95,31 @@
                             <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank">construction site</a>
                         </li>
                     </ul>
-                    <li class="menu-item first-level" id="skills" onclick="clearMenuItem();
-                     clickMenuItem(`Skills`); showSkills(); skillsImgChange(`open-skills-item`,`img/DownPolygon.png`,`skills-items`);">                     
+                    <li class="menu-item first-level" id="skills" onclick="showSkills(); skillsImgChange(`open-skills-item`,`img/DownPolygon.png`,`skills-items`);">                     
                     <div id="open-block-skills-div">
                         <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-skills-item">
                     </div>                     
                     skills
                     </li>
-                     <ul class="works-ul" id="skills-items">
+                    <ul class="works-ul" id="skills-items">
                         <li class="skills-ul-li second-level">
-                        <div class="skills-icon-div" id="">
-                            <img src="img/icons/skills/html.svg" alt="" class="skills-icons">
-                        </div>                       
-                        HTML5</li>
+                            <div class="skills-icon-div" id="">
+                                <img src="img/icons/skills/html.svg" alt="" class="skills-icons">
+                            </div>                       
+                            HTML5
+                        </li>
                         <li class="skills-ul-li second-level">
-                        <div class="skills-icon-div" id="">
-                            <img src="img/icons/skills/css.svg" alt="" class="skills-icons">
-                        </div>                        
-                        CSS3</li>
+                            <div class="skills-icon-div" id="">
+                                <img src="img/icons/skills/css.svg" alt="" class="skills-icons">
+                            </div>                        
+                            CSS3
+                        </li>
                         <li class="skills-ul-li second-level">
-                        <div class="skills-icon-div" id="">
-                            <img src="img/icons/skills/js.svg" alt="" class="skills-icons js-icon">
-                        </div> 
-                        JavaScript</li>
+                            <div class="skills-icon-div" id="">
+                                <img src="img/icons/skills/js.svg" alt="" class="skills-icons js-icon">
+                            </div> 
+                            JavaScript
+                        </li>
                     </ul>
                     <li class="menu-item first-level" id="contact" onclick="clearMenuItem();
                      clickMenuItem(`Contact`); changeContent(`.contact-main-content`);">
@@ -127,8 +129,9 @@
                      contact.html</li>
                      <li class="menu-item first-level"> 
                         <div class="icon-div">
-                            <a href="Profile.pdf" target="_blank"><img src="img/icons/pdf.svg" alt="" id="pdf">CV.pdf</a> 
+                           <img src="img/icons/pdf.svg" alt="" id="pdf">
                          </div>
+                         <a href="Profile.pdf" target="_blank">CV.pdf</a> 
                      </li>
                 </ul>
             </div>
@@ -191,8 +194,15 @@
 
             </div>
             <div class="mob-wrapper">
-                <p class="mob-first-level"><span class="aqua">function</span> Portfolio ()</p>
-                <p>console.log('Приветствую всех на своем сайте портфолио');</p>
+                <p class="mob-first-level"><i class="aqua">function</i>&nbsp;&nbsp;<span class="green">portfolio</span>&nbsp;&nbsp;()&nbsp;&nbsp;{</p>
+                <p class="mob-second-level"><i class="aqua">console.</i><span class="aqua">log</span>(<span class="gold">"Hi everyone on my site portfolio"</span>);</p>
+                <p class="mob-first-level-third">}</p>
+                <p class="mob-second-level"></p>
+                <p class="mob-first-level-third"><i class="aqua">let&nbsp;&nbsp;</i>I&nbsp;&nbsp;am&nbsp;&nbsp;=&nbsp;&nbsp;<span class="gold">"My name is Nikita Bekish."</span>;</p>
+                <p class="mob-first-level-third"><i class="aqua">let</i>&nbsp;&nbsp;str&nbsp;&nbsp;=&nbsp;&nbsp;<span class="gold">"Novice frond-end devepoler."</span>;</p>
+                <p class="mob-second-level"></p>
+                <p class="mob-first-level-third"><i class="aqua">function</i>&nbsp;&nbsp;<span class="green">getInfoAboutMe</span>&nbsp;&nbsp;<span class="white">()&nbsp;&nbsp;{</span></p>
+                <p class="mob-second-level"><i class="aqua">let</i>&nbsp;&nbsp;years&nbsp;&nbsp;=&nbsp;&nbsp;<span class="purple">0</span>;</p>
             </div>
            </div>
 
@@ -231,7 +241,7 @@
                <div class="works-header">
                    <div class="works-image">
                     <img src="img/works/Ellipse.png" class="img-fluid hehis" alt="">
-                    <p>All of my works you can see on this page</p>
+                    <p id="mobText">All of my works you can see on this page</p>
                    </div>
                    
                    <h2 class="works-caption">my works</h2>
@@ -254,26 +264,68 @@
                    <div class="works-border-block">
                         <ul class="works-list">
                             <li>
+                                
                                 <div class="works-border">
-                                    <a href="http://u429311.s18.wh1.su/adventure/home/index.html" target="_blank"><img src="img/sites/advertise.png" alt=""></a>
+                                    <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank"><img src="img/sites/construction.png" alt=""></a>
                                 </div>
                                 <div class="works-li-txt">
-                                    <p></p>
+                                    <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
+                                        Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. <br>
+                                        Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                        Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum. <br>
+                                        In vitae varius augue, eu consectetur ligula. <br>
+                                        Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros. <br>
+                                        Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br> 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="works-border">
                                     <img src="img/sites/toastmaster-site.jpg" alt="">
                                 </div>
+                                <div class="works-li-txt">
+                                    <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
+                                        Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. <br>
+                                        Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                        Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum. <br>
+                                        In vitae varius augue, eu consectetur ligula. <br>
+                                        Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros. <br>
+                                        Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br> 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
                             </li>
                             <li>
                                 <div class="works-border">
                                         <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank"><img src="img/sites/photo.png" alt=""></a>
                                 </div>
+                                <div class="works-li-txt">
+                                    <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
+                                        Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. <br>
+                                        Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                        Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum. <br>
+                                        In vitae varius augue, eu consectetur ligula. <br>
+                                        Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros. <br>
+                                        Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br> 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
                             </li>
                             <li>
                                 <div class="works-border">
-                                        <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank"><img src="img/sites/construction.png" alt=""></a>
+                                    <a href="http://u429311.s18.wh1.su/adventure/home/index.html" target="_blank"><img src="img/sites/advertise.png" alt=""></a>
+                                </div>
+                                <div class="works-li-txt">
+                                    <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
+                                        Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. <br>
+                                        Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                        Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum. <br>
+                                        In vitae varius augue, eu consectetur ligula. <br>
+                                        Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros. <br>
+                                        Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br> 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </li>
                         </ul>
@@ -340,7 +392,7 @@
                             &lt;<span class="red">a</span> <span class="green">href</span>=<span class="gold">"mailto:<span id="emailSpan"></span>"</span>&gt;your link&lt;/<span class="red">a</span>&gt;
                         </p> 
                         <p class="html-contact-text-2">
-                            &lt;<span class="red">p</span>&gt;<br><textarea cols="50" rows="5" id="messageSpan" disabled="disabled"></textarea><br />&lt;/<span
+                            &lt;<span class="red">p</span>&gt;<br><textarea cols="50" rows="3" id="messageSpan" disabled="disabled"></textarea><br />&lt;/<span
                                 class="red">p</span>&gt; <br>
                         </p>
                         <p class="html-contact-text">
@@ -377,7 +429,7 @@
                         </div>
                         <div class="send-content">
                             <div class="g-recaptcha" data-sitekey="6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In"></div>
-                            <button type="submit" id="btn">send message</button>
+                            <button type="submit" id="btn">Send message</button>
                         </div>
                     </div>
             

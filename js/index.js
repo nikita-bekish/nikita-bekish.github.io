@@ -8,12 +8,18 @@ console.log(`Hi everyone on my site portfolio`);
 let iAm = `My name is Nikita Bekish.`;
 let str = `Novice frond-end devepoler.`;
 console.log(iAm, str);
-console.log(`I'm doing frond-end is above half a year, and now i want to share my result`);
+console.log(`I am start learning frond-end in the mid of 2018, and now i want to share my results`);
 
 window.onload = function () {
     item = document.getElementById(`AboutMe`);
+    mobItem = document.getElementById(`WhatIdo`);
 
-    item.style.display = `block`;
+
+    if (window.screen.width > 414) {
+        item.style.display = `block`;
+    } else {
+        mobItem.style.display = `block`;
+    }
 }
 
 
@@ -181,6 +187,8 @@ function changeContent(realContent) {
 
     var arr = [`.about-me-main-content`,`.contact-main-content`, `.works-main-content`, `.what-i-do-content`];
 
+
+
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] != realContent) {
             item = document.querySelectorAll(arr[i] + ` > *`);
@@ -192,7 +200,7 @@ function changeContent(realContent) {
 
     real = document.querySelectorAll(realContent + ` > *`);
 
-    
+    console.log()
 
     for (var i = 0; i < real.length; i++) {
         real[i].style.display = `block`;
@@ -215,7 +223,7 @@ function changeContent(realContent) {
         mainContent.style.width = '100%'; 
         mainContent.style.display = 'block'; 
     } else {
-        return
+        return;
     }
     x = !x;
 }
@@ -318,7 +326,7 @@ var typed2 = new Typed('#typed2', {
 })
 var typed1 = new Typed('#typed3', {
     strings: [
-        '<i class="aqua">let</i> I am = <span class="gold">"My name is Nikita Bekish."</span>;'
+        '<i class="aqua">let</i> IAm = <span class="gold">"My name is Nikita Bekish."</span>;'
     ],
     typeSpeed: 20,
     startDelay: 3300,
