@@ -558,6 +558,18 @@ body {
 .g-recaptcha {
     margin: 10px 0 0 10px;  
 }
+.contact-mob-form button {
+    background-color: rgba(0, 122, 204, 1);
+    border: none;
+    color: white;
+    width: 280px;
+    height: 40px;
+    outline: none;
+    margin-top: 35px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+}
 .works-li-txt {
     display: flex;
     justify-content: flex-start;
@@ -790,6 +802,69 @@ body {
     color: #B0B0B0;
 
 }
+.contact-mob-caption {
+    display: none;
+    font-family: Roboto, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #B0B0B0;
+    text-align: center;
+    margin-top: 25px;
+}
+.contact-mob-text {
+    display: none;
+    font-family: Roboto, monospace;
+    font-size: 16px;
+    font-weight: normal;
+    color: #B0B0B0;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+.contact-mob-form {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+.contact-mob-form form{
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+.contact-mob-form input {
+    display: none;
+    width: 280px;
+    height: 36px;
+    background: #1A1717;
+    border: 4px solid #B0B0B0;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), -5px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    color: #b0b0b0;
+}
+.contact-mob-form textarea {
+    display: none;
+    width: 280px;
+   
+    background: #1A1717;
+    border: 4px solid #B0B0B0;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), -5px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    color: #b0b0b0;
+}
+.contact-mob-form form  {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
 #firstP {
     margin-left: 25px;
 }
@@ -993,6 +1068,24 @@ body {
         right: 0;
         width: 40%;
     }
+    .contact-mob-caption {
+        display: block;
+    }
+    .contact-mob-text {
+        display: block;
+    }
+    .contact-mob-form {
+        display: block;
+    }
+    .contact-mob-form form {
+        display: flex;
+    }
+    .contact-mob-form input {
+        display: block;
+    }
+    .contact-mob-form textarea {
+        display: block;
+    }
     .text-about-me {
         width: 80%;
         overflow-y: scroll;
@@ -1109,7 +1202,7 @@ body {
         display: none;
     }
     .power-shell-content {
-        display: none;
+        display: none !important;
     }
     .power-shell-content input {
         display: none;

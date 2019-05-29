@@ -362,11 +362,20 @@
                 </div>
 
                 <div class="contact-mob-content">
-                    <div class="input-group mb-3 mob-input">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <h2 class="contact-mob-caption">
+                        SEND ME A LINE
+                    </h2>
+                    <p class="contact-mob-text">
+                        If you are interested in what i do or you would like to use my services, 
+                        please contact me through the form below. Or write in one of the social networks.
+                    </p>
+                    <div class="contact-mob-form">
+                        <form action="mail.php" method="POST" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
+                            <input placeholder="Name" type="text" name="user_name" autocomplete="new-password">
+                            <input placeholder="E-mail" type="text" name="user_email" autocomplete="new-password">
+                            <textarea placeholder="Message" type="text" autocomplete="new-password" rows="5"></textarea>
+                            <button type="submit">SEND MESSAGE</button>
+                        </form>
                     </div>
                 </div>
 
@@ -412,7 +421,7 @@
               
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
-                            <form action="" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
+                            <form action="mail.php" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
                                 &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="new-password" onblur="consoleSpan(this, `nameSpan`)"; >
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
@@ -428,7 +437,7 @@
                             <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="5" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
                         </div>
                         <div class="send-content">
-                            <div class="g-recaptcha" data-sitekey="6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In"></div>
+                            
                             <button type="submit" id="btn">Send message</button>
                         </div>
                     </div>
