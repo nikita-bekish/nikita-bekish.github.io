@@ -853,13 +853,14 @@ body {
     align-items: center;
     color: #b0b0b0;
     padding-top: 5px;
+    text-decoration: none;
 }
 .mob-soc-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 20px;
 }
 .contact-mob-form {
     display: none;
