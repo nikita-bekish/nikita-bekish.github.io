@@ -859,7 +859,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    
 }
 .contact-mob-form {
     display: none;
@@ -1259,9 +1259,11 @@ body {
         
     }
     .contact-mob-content {
+        position: fixed;
         display: none;
         width: calc(100% - 50px);
         height: 100%;
+        overflow-y: scroll;
     }
     .numbering {
         width: 20px;
