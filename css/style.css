@@ -89,6 +89,7 @@ body {
     width: 20%;
     height: 100%;
     background: #252426;
+    
     border-right: 1px solid #000;
   
 }
@@ -290,6 +291,7 @@ body {
     height: 100%;
     text-align: center;
     user-select: none;
+    
 }
 .numbering ul {
     list-style-type: none;
@@ -463,7 +465,7 @@ body {
 }
 .numbering-contact {
     position: absolute;
-    display: none;
+    display: none !important;
     width: 50px;
     height: 100%;
     text-align: center;
@@ -547,7 +549,7 @@ body {
     color: white;
     width: 304px;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     height: 30px;
     outline: none;
 }
@@ -780,6 +782,7 @@ body {
     overflow-y: scroll;
     width: 100%;
     height: calc(100% - 44px);
+    float: left;
 }
 .myHistory img {
     width: 150px;
@@ -787,6 +790,7 @@ body {
     filter: hue-rotate(0deg);
 }
 .text-about-me {
+    position: absolute;
     width: 50%;
     height: 100%;
     margin-left: 15px;
@@ -795,6 +799,22 @@ body {
 }
 .text-about-me p {
     margin-top: 0;
+}
+.what-do-img {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: calc(50% + 15px);
+    width: 25%;
+    height: 100%;
+    
+}
+.what-div-img {
+    width: 100%;
+    height: 50%;
+    border-left: 1px solid #b0b0b0;
+    border-bottom: 1px solid #b0b0b0;
+    border-right: 1px solid #b0b0b0;
 }
 .myHistory p {
     font-family: Roboto, monospace;
@@ -823,15 +843,33 @@ body {
     margin-right: 5%;
     margin-bottom: 0;
 }
+.contact-mob-text img {
+    width: 24px;
+    height: 24px;
+}
+.contact-mob-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b0b0b0;
+    padding-top: 5px;
+}
+.mob-soc-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
 .contact-mob-form {
     display: none;
     width: 100%;
     height: 500px;
 }
-.contact-mob-form form{
+.contact-mob-form form {
     display: none;
     width: 100%;
-    height: 500px;
+    height: 370px;
 }
 .contact-mob-form input {
     display: none;
@@ -1051,6 +1089,7 @@ body {
         width: 100%;
         left: 50px;
         height: 100vh;
+        border-right: 1px solid #000;
     }
     .main-content {
         display: none;
@@ -1228,5 +1267,10 @@ body {
         width: 20px;
         display: none;
     }
-   
-}
+    .what-do-img {
+        display: none;
+    }
+    .what-div-img {
+        display: none;
+    }
+}   

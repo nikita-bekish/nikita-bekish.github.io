@@ -12,8 +12,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src='https://www.google.com/recaptcha/api.js?render=6LcvQqAUAAAAAMH-mh05NLJF-iUkM37fSz3Ut2In' async defer></script>
-    <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
+  
     <script src="js/forms.js"></script>
 </head>
 <body>
@@ -210,6 +209,7 @@
 
            <div class="what-i-do-content">
                <div class="myHistory">
+                    
                     <div class="text-about-me">
                         <p> <span id="firstP">My name is Nikita Bekish, I first heard about web development while studying at a college where I studied POIT, but I became interested in programming professionally while studying at BSUIR.</span><br /> 
                             <span id="secondP">After moving to Minsk, I decided to change something in my life. I began to develop my college skills.</span> 
@@ -231,6 +231,10 @@
                                 paradoxical solutions and this is what I like.</span>
                         </p>
                         
+                    </div>
+                    <div class="what-do-img">
+                        <div class="what-div-img"></div>
+                        <div class="what-div-img"></div>                        
                     </div>
                </div>
            </div>
@@ -376,7 +380,13 @@
                             <textarea placeholder="Message" type="text" autocomplete="new-password" rows="5"></textarea>
                             <button type="submit">SEND MESSAGE</button>
                         </form>
+                        <div class="mob-soc-icons">
+                                <p class="contact-mob-text"><a href="https://www.linkedin.com/in/nikita-bekish-05b02b174/"><img src="img/icons/lin.svg" alt="">linkedin</a></p>
+                                <p class="contact-mob-text"><a href="https://t.me/zxcnp"><img src="img/icons/tel.svg" alt="">telegram</a></p>
+                                <p class="contact-mob-text"><a href="https://vk.com/id178955654"><img src="img/icons/vk.svg" alt="">vk</a></p>
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="html-contact">
@@ -437,7 +447,6 @@
                             <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="5" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
                         </div>
                         <div class="send-content">
-                            
                             <button type="submit" id="btn">Send message</button>
                         </div>
                     </div>
@@ -499,7 +508,7 @@
             <a href="#services-page">s</a>
     </main>
     
-    <!--script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script-->
+    
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/index.js"></script>
