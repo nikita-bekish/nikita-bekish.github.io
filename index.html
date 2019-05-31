@@ -458,7 +458,7 @@
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
                             <form action="mail.php" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
-                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="off" onblur="consoleSpan(this, `nameSpan`)"; >
+                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="off" onblur="consoleSpan(this, `nameSpan`)"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.email-content`); clearBorderBottom(); borderBottom(`eMail`);}">
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
                                 <button type="submit" id="shadyBtn">send</button>
@@ -466,7 +466,7 @@
                             </form>
                         </div>
                         <div class="email-content">                             
-                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="off" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; >                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
+                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="off" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.message-content`); clearBorderBottom(); borderBottom(`message`);}">                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
                         </div>
                         <div class="message-content">                            
                             <span>&gt;</span>                                                                                          <!--onkeypress="return runScript(`messageTextarea`, `messageSpan`, event);"-->                                                          
