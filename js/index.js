@@ -15,7 +15,7 @@ window.onload = function () {
     mobItem = document.getElementById(`WhatIdo`);
 
 
-    if (window.screen.width > 414) {
+    if (window.screen.width > 426) {
         item.style.display = `block`;
     } else {
         mobItem.style.display = `block`;
@@ -127,7 +127,7 @@ function widthExplorer () {
 
         mainContent.style.left = '5%';
         mainContent.style.width = '95%';
-    } else if (x && window.screen.width <= 414) {
+    } else if (x && window.screen.width <= 426) {
         id.style.width = '100%';
 
         tab.style.left = '50px';
@@ -140,7 +140,7 @@ function widthExplorer () {
         mainContent.style.left = '50px';
         mainContent.style.width = '0%'; 
         mainContent.style.display = 'none';       
-    } else if (!x && window.screen.width <= 414) {
+    } else if (!x && window.screen.width <= 426) {
         id.style.width = '0%';
 
         tab.style.left = '50px';
@@ -206,7 +206,7 @@ function changeContent(realContent) {
         real[i].style.display = `block`;
     }
 
-    if (window.screen.width <= 414) {
+    if (window.screen.width <= 426) {
         id = document.getElementById(`explorer`);
 
         id.style.width = '0%';

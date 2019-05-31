@@ -843,6 +843,10 @@ body {
     margin-right: 5%;
     margin-bottom: 0;
 }
+.contact-mob-links {
+    margin-left: 3%;
+    margin-right: 3%;
+}
 .contact-mob-text img {
     width: 24px;
     height: 24px;
@@ -861,6 +865,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
 .contact-mob-form {
     display: none;
@@ -1079,7 +1084,7 @@ body {
 .mob-input {
     display: none !important;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
     .form-control {
         display: block;
     }
@@ -1166,19 +1171,25 @@ body {
         margin-left: 20px;
         font-family: Roboto, monospace, sans-serif;
         font-size: 13px;
-        margin-bottom: 1px;
+        margin-bottom: 0;
     }
     .mob-second-level {
         font-family: Roboto, monospace, sans-serif;
         font-size: 13px;
         margin: 0;
-        margin-left: 30px;
+        margin-left: 35px;
+    }
+    .mob-third-level {
+        font-family: Roboto, monospace, sans-serif;
+        font-size: 13px;
+        margin: 0;
+        margin-left: 50px;
     }
     .mob-first-level-third {
         margin-left: 20px;
         font-family: Roboto, monospace, sans-serif;
         font-size: 13px;
-        margin-bottom: 1px;
+        margin-bottom: 0;
         margin-top: 0;
     }
     .works-li-txt {
