@@ -880,7 +880,7 @@ body {
 .contact-mob-form {
     display: none;
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
 .contact-mob-form form {
     display: none;
@@ -912,6 +912,74 @@ body {
     outline: none;
     margin-top: 30px;
     color: #b0b0b0;
+}
+.what-div-img  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what-div-img img {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+}
+.mob-console {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: calc(100% - 50px);
+    height: 200px;
+    border-top: 1px solid #b0b0b0;
+}
+.mob-console p {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Roboto, monospace;
+    font-size: 14px;
+    color: #fff;
+    right: 10px;
+    margin-bottom: 0;
+    
+}
+.console-border {
+    padding-right: 5px;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+.right {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+}
+.first-mob-row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+}
+.first-mob-row p {
+    font-family: Roboto, monospace;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0 0 0 10px;
+}
+.second-mob-row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+.second-mob-row p {
+    font-family: Roboto, monospace;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0 0 0 10px;
 }
 .contact-mob-form form  {
     display: none;
@@ -1282,7 +1350,7 @@ body {
     }
     .contact-mob-content {
         position: fixed;
-        display: block;
+        display: none;
         width: calc(100% - 50px);
         height: 100%;
         overflow-y: scroll;
