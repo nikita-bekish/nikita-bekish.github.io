@@ -126,12 +126,14 @@
                         <img src="img/icons/html.svg" alt="">
                      </div>
                      contact.html</li>
+                     <a href="Profile.pdf" target="_blank" id="cvLink">
                      <li class="menu-item first-level"> 
                         <div class="icon-div">
                            <img src="img/icons/pdf.svg" alt="" id="pdf">
                          </div>
-                         <a href="Profile.pdf" target="_blank">CV.pdf</a> 
+                         CV.pdf 
                      </li>
+                    </a>
                 </ul>
             </div>
     </section>
@@ -381,6 +383,11 @@
                         If you are interested in what i do or you would like to use my services, 
                         please contact me through the form below. Or write in one of the social networks.
                     </p>
+                    <div class="mob-soc-icons">
+                        <p class="contact-mob-text contact-mob-links"><a href="https://www.linkedin.com/in/nikita-bekish-05b02b174/"><img src="img/icons/lin.svg" alt="">linkedin</a></p>
+                        <p class="contact-mob-text contact-mob-links"><a href="https://t.me/zxcnp"><img src="img/icons/tel.svg" alt="">telegram</a></p>
+                        <p class="contact-mob-text contact-mob-links"><a href="https://github.com/nikita-bekish"><img src="img/icons/git.svg" alt="">github</a></p>
+                    </div>
                     <div class="contact-mob-form">
                         <form action="mail.php" method="POST" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
                             <input placeholder="Name" type="text" name="user_name" autocomplete="new-password">
@@ -388,11 +395,7 @@
                             <textarea placeholder="Message" name="user_text" type="text" autocomplete="new-password" rows="5"></textarea>
                             <button type="submit">SEND MESSAGE</button>
                         </form>
-                        <div class="mob-soc-icons">
-                                <p class="contact-mob-text contact-mob-links"><a href="https://www.linkedin.com/in/nikita-bekish-05b02b174/"><img src="img/icons/lin.svg" alt="">linkedin</a></p>
-                                <p class="contact-mob-text contact-mob-links"><a href="https://t.me/zxcnp"><img src="img/icons/tel.svg" alt="">telegram</a></p>
-                                <p class="contact-mob-text contact-mob-links"><a href="https://github.com/nikita-bekish"><img src="img/icons/git.svg" alt="">github</a></p>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -432,15 +435,15 @@
                         <p onclick="clearBorderBottom(); borderBottom(`name`); changePowerShellContent(`.name-content`);" id="name">name</p>
                         <p onclick="clearBorderBottom(); borderBottom(`eMail`); changePowerShellContent(`.email-content`);" id="eMail" ;>e-mail</p>
                         <p onclick="clearBorderBottom(); borderBottom(`message`); changePowerShellContent(`.message-content`);" id="message">message</p>
-                        <p onclick="clearBorderBottom(); borderBottom(`send`); changePowerShellContent(`.send-content`);" id="send">send message</p>
-                        <!---->
+                        <!--<p onclick="clearBorderBottom(); borderBottom(`send`); changePowerShellContent(`.send-content`);" id="send">send message</p>
+                        -->
                     </div>
                 </div>
               
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
                             <form action="mail.php" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
-                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="new-password" onblur="consoleSpan(this, `nameSpan`)"; >
+                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="off" onblur="consoleSpan(this, `nameSpan`)"; >
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
                                 <button type="submit" id="shadyBtn">send</button>
@@ -448,15 +451,16 @@
                             </form>
                         </div>
                         <div class="email-content">                             
-                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="new-password" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; >                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
+                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="off" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; >                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
                         </div>
                         <div class="message-content">                            
                             <span>&gt;</span>                                                                                          <!--onkeypress="return runScript(`messageTextarea`, `messageSpan`, event);"-->                                                          
-                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="5" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
-                        </div>
-                        <div class="send-content">
+                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="off" cols="50" rows="4" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
                             <button type="submit" id="btn">Send message</button>
                         </div>
+                        <!--<div class="send-content">
+                            
+                        </div>-->
                     </div>
             
            </div>
@@ -483,7 +487,7 @@
     </div>
    
     
-    <main class="mob-main" >
+   <!-- <main class="mob-main" >
             <p> <span id="firstP">My name is Nikita Bekish, I first heard about web development while studying at a college where I studied POIT, but I became interested in programming professionally while studying at BSUIR.</span><br /> 
                 <span id="secondP">After moving to Minsk, I decided to change something in my life. I began to develop my college skills.</span> 
                 Кстати говоря учился я на специальность ПОИТ и получил квалификацию техник-программист. <br />
@@ -514,7 +518,7 @@
                 Но иногда нахожу парадоксальные решения и это то, что мне нравится.
             </p>
             <a href="#services-page">s</a>
-    </main>
+    </main>-->
     
     
     <script src="js/jquery-3.3.1.js"></script>

@@ -200,7 +200,7 @@ function changeContent(realContent) {
 
     real = document.querySelectorAll(realContent + ` > *`);
 
-    console.log()
+    
 
     for (var i = 0; i < real.length; i++) {
         real[i].style.display = `block`;
@@ -236,7 +236,7 @@ function borderBottom(id) {
 }
 
 function clearBorderBottom() {
-    var arr = [`name`,`eMail`,`message`,`send`];
+    var arr = [`name`,`eMail`,`message`];
 
     for (var i = 0; i < arr.length; i++) { 
         item = document.getElementById(arr[i]);
@@ -248,7 +248,7 @@ function clearBorderBottom() {
 }
 
 function changePowerShellContent(realContent) {
-    var arr = [`.name-content`, `.email-content`, `.message-content`, `.send-content`];
+    var arr = [`.name-content`, `.email-content`, `.message-content`];
     
   
     for (var i = 0; i < arr.length; i++) {
