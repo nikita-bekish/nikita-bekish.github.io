@@ -596,6 +596,18 @@ body {
     font-family: Roboto, monospace;
     flex-wrap: wrap;
 }
+#nameInput {
+    color: #b0b0b0;
+}
+
+#nameInput,
+#nameInput-webkit-autofill:hover, 
+#nameInput-webkit-autofill:focus, 
+#nameInput-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #1E1E1E inset !important;
+    color: #b0b0b0 !important;
+}
+
 .name-content {
     font-family: monospace;
     font-size: 13px;

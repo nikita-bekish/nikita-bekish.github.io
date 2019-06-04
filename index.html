@@ -457,8 +457,8 @@
               
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
-                            <form action="mail.php" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
-                                &gt;<input placeholder="enter your name" type="text" name="user_name" id="nameInput" autocomplete="new-password" onblur="consoleSpan(this, `nameSpan`)"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.email-content`); clearBorderBottom(); borderBottom(`eMail`);}">
+                            <form action="mail.php" autocomplete="off" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                        <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
+                                &gt;<input autocomplete="new-password" placeholder="enter your name" type="text" name="user_name" id="nameInput"  onblur="consoleSpan(this, `nameSpan`)"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.email-content`); clearBorderBottom(); borderBottom(`eMail`);}">
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
                                 <button type="submit" id="shadyBtn">send</button>
