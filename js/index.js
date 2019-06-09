@@ -1,8 +1,8 @@
-var x = false;
-var y = false;
-var z = false;
-var f = false;
-var h = false;
+let x = false;
+let y = false;
+let z = false;
+let f = false;
+let h = false;
 
 console.log(`Hi everyone on my site portfolio`);
 let iAm = `My name is Nikita Bekish.`;
