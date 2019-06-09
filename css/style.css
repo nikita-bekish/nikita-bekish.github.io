@@ -25,6 +25,7 @@ body {
 .arrows {
     width: 8px;
     height: 12px;
+    user-select: none;
 }
 
 
@@ -47,6 +48,7 @@ body {
     align-items: center;
     width: 100%;
     list-style-type: none;
+    user-select: none;
 }
 .activity-bar-list li {
     display: flex;
@@ -117,6 +119,7 @@ body {
     justify-content: center;
     top: 65px;
     width: 100%;
+    user-select: none;
 }
 .explorer-menu-ul {
     list-style: none;
@@ -265,6 +268,7 @@ body {
     background: #252426;
     box-sizing: border-box;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    user-select: none;
 }
 .tab-line p {
     position: absolute;
@@ -735,8 +739,12 @@ body {
     width: 500px;
     top: 41px;
 }
-.fa-star:not(:nth-last-child(1)) {
+.fa-star {
     color: #D6832C;
+}
+
+.fa-star:nth-child(5), .fa-star:nth-child(4) {
+    color: gray;
 }
 .works-about-page-paragraph {
     position: absolute;
@@ -1209,7 +1217,7 @@ body {
         border: none;
     }
     .works-list li {
-        width: calc(80% - 50px);
+        
         justify-content: center;
         align-items: center;
     }
@@ -1261,6 +1269,10 @@ body {
     .main-content {
         display: none;
     }
+    
+    #works-items li a {
+        line-height: 30px;
+    }
     .tab-line {
         display: none;
         justify-content: flex-end;
@@ -1268,6 +1280,12 @@ body {
     }
     .tab-line p {
         right: 0;
+    }
+    .first-level {
+        padding-left: 27px;
+    }
+    .second-level {
+        padding-left: 42px;
     }
     .tab {
         display: none;

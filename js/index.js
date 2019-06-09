@@ -1,8 +1,8 @@
-let x = false;
-let y = false;
-let z = false;
-let f = false;
-let h = false;
+var x = false;
+var y = false;
+var z = false;
+var f = false;
+var h = false;
 
 console.log(`Hi everyone on my site portfolio`);
 let iAm = `My name is Nikita Bekish.`;
@@ -11,8 +11,8 @@ console.log(iAm, str);
 console.log(`I am start learning frond-end in the mid of 2018, and now i want to share my results`);
 
 window.onload = function () {
-    item = document.getElementById(`AboutMe`);
-    mobItem = document.getElementById(`WhatIdo`);
+    let item = document.getElementById(`AboutMe`);
+    let mobItem = document.getElementById(`WhatIdo`);
 
 
     if (window.screen.width > 426) {
