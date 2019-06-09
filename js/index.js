@@ -371,7 +371,7 @@ var typed1 = new Typed('#typed7', {
 })
 var typed1 = new Typed('#typed8', {
     strings: [
-        '<span class="red">for</span> (<span class="aqua">var</span> days = <span class="purple">0</span>; days <= <span class="purple">365</span>; days<span class="red">++</span>) {'
+        '<span class="red">for</span> (<span class="aqua">let</span> days = <span class="purple">0</span>; days <= <span class="purple">365</span>; days<span class="red">++</span>) {'
     ],
     typeSpeed: 20,
     startDelay: 11500,
@@ -423,8 +423,35 @@ var typed1 = new Typed('#typed13', {
     showCursor: false,
     loop: false
 })
+var typed1 = new Typed('#typed14', {
+    strings: [
+        '<span class="green">portfolio</span>();'
+    ],
+    typeSpeed: 20,
+    startDelay: 18200,
+    showCursor: false,
+    loop: false
+})
+var typed1 = new Typed('#typed15', {
+    strings: [
+        '<span class="aqua"><i>console</i>.log</span>(IAm, str);'
+    ],
+    typeSpeed: 20,
+    startDelay: 18700,
+    showCursor: false,
+    loop: false
+})
+var typed1 = new Typed('#typed16', {
+    strings: [
+        '<span class="green">getInfoAboutMe</span>();'
+    ],
+    typeSpeed: 20,
+    startDelay: 19700,
+    showCursor: false,
+    loop: false
+})
 
-
+// 
 // jQuery
 
 $('.menu-btn').on('click', function(e) {

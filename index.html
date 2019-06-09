@@ -17,105 +17,105 @@
 </head>
 <body>
     
-    <section class="activity-bar">
+    <nav class="activity-bar">
         <div class="activity-bar-block">
             <ul class="activity-bar-list">
                 <li class="activity-bar-menu-item" onclick="widthExplorer()">
-                    <img src="img/icons/activity/File.svg" alt="">
+                    <img src="img/icons/activity/File.svg" alt="fix width icon">
                 </li>
                 <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`Contact`); changeContent(`.contact-main-content`);">
-                    <img src="img/icons/activity/Found.svg" alt="">
+                    <img src="img/icons/activity/Found.svg" alt="contact me icon">
                 </li>
                 <li class="activity-bar-menu-item">
-                    <a href="Profile.pdf" target="_blank"><img src="img/icons/activity/Tool.svg" alt=""></a>
+                    <a href="Profile.pdf" target="_blank"><img src="img/icons/activity/Tool.svg" alt="resume icon"></a>
                 </li>
                 <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`WhatIdo`); changeContent(`.what-i-do-content`);">
-                    <img src="img/icons/activity/Juk.svg" alt="">
+                    <img src="img/icons/activity/Juk.svg" alt="about me icon">
                 </li>
                 <li class="activity-bar-menu-item" onclick="clearMenuItem(); clickMenuItem(`Works`); changeContent(`.works-main-content`);">
-                    <img src="img/icons/activity/Coub.svg" alt="">
+                    <img src="img/icons/activity/Coub.svg" alt="works icon">
                 </li>
             </ul>           
         </div>
-    </section>
+    </nav>
 
     <section class="explorer" id="explorer">
         <h2 class="activity-bar-caption activity-bar-h2">explorer</h2>
         <div class="explorer-open-pages" onclick="imgChange(`open-portfolio-nb`,
         `img/Polygon.png`,`img/DownPolygon.png`,`menu`);">
-            <img src="img/DownPolygon.png" alt="" class="arrows explorer-arrows" id="open-portfolio-nb">
-            <h3 class="activity-bar-caption activity-bar-h3">portfolio nikita bekish</h3>
+            <img src="img/DownPolygon.png" alt="arrow icon" class="arrows explorer-arrows" id="open-portfolio-nb">
+            <h1 class="activity-bar-caption activity-bar-h3">portfolio nikita bekish</h1>
         </div>
         <div class="explorer-menu">
                 <ul class="explorer-menu-ul" id="menu" onclick="listView(this);">
                     <li class="menu-item first-level" id="aboutMe" onclick="clearMenuItem();
                      clickMenuItem(`AboutMe`); changeContent(`.about-me-main-content`);">
                      <div class="icon-div">
-                        <img src="img/icons/javascript.svg" alt="">
+                        <img src="img/icons/javascript.svg" alt="js icon">
                      </div>
                      about_me.js</li>
                     <li class="menu-item first-level" id="whatIDo" onclick="clearMenuItem();
                      clickMenuItem(`WhatIdo`); changeContent(`.what-i-do-content`);">
                      <div class="icon-div" id="defaultIcon">
-                        <img src="img/icons/default.svg" alt="">
+                        <img src="img/icons/default.svg" alt="txt icon">
                      </div>
                      what_i_do.txt</li>
                     <li class="menu-item first-level" id="works" onclick="clearMenuItem();
                      clickMenuItem(`Works`); changeContent(`.works-main-content`); showItems();
                      worksImgChange(`open-works-item`,`img/DownPolygon.png`,`works-items`);">
                      <div id="open-block-works-div">
-                        <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-works-item">
+                        <img src="img/Polygon.png" alt="arrow link" class="arrows explorer-arrows" id="open-works-item">
                      </div>
                      works
                      </li>
                     <ul class="works-ul" id="works-items">
                         <li class="works-ul-li second-level">
                             <div class="works-icon-div" id="">
-                                <img src="img/works/link.svg" alt="">
+                                <img src="img/works/link.svg" alt="link icon">
                             </div>
                             <a href="">advertise site</a>
                         </li>
                         <li class="works-ul-li second-level">
                             <div class="works-icon-div" id="">
-                                <img src="img/works/link.svg" alt="">
+                                <img src="img/works/link.svg" alt="link icon">
                             </div>
                             <a href="">toastmaster site</a>
                         </li>
                         <li class="works-ul-li second-level">
                             <div class="works-icon-div" id="">
-                                <img src="img/works/link.svg" alt="">
+                                <img src="img/works/link.svg" alt="link icon">
                             </div>
                             <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank">photographer site</a>
                         </li>
                         <li class="works-ul-li second-level">
                             <div class="works-icon-div" id="">
-                                <img src="img/works/link.svg" alt="">
+                                <img src="img/works/link.svg" alt="link icon">
                             </div>
                             <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank">construction site</a>
                         </li>
                     </ul>
                     <li class="menu-item first-level" id="skills" onclick="showSkills(); skillsImgChange(`open-skills-item`,`img/DownPolygon.png`,`skills-items`);">                     
                     <div id="open-block-skills-div">
-                        <img src="img/Polygon.png" alt="" class="arrows explorer-arrows" id="open-skills-item">
+                        <img src="img/Polygon.png" alt="arrow link" class="arrows explorer-arrows" id="open-skills-item">
                     </div>                     
                     skills
                     </li>
                     <ul class="works-ul" id="skills-items">
                         <li class="skills-ul-li second-level">
                             <div class="skills-icon-div" id="">
-                                <img src="img/icons/skills/html.svg" alt="" class="skills-icons">
+                                <img src="img/icons/skills/html.svg" alt="html icon" class="skills-icons">
                             </div>                       
                             HTML5
                         </li>
                         <li class="skills-ul-li second-level">
                             <div class="skills-icon-div" id="">
-                                <img src="img/icons/skills/css.svg" alt="" class="skills-icons">
+                                <img src="img/icons/skills/css.svg" alt="css icon" class="skills-icons">
                             </div>                        
                             CSS3
                         </li>
                         <li class="skills-ul-li second-level">
                             <div class="skills-icon-div" id="">
-                                <img src="img/icons/skills/js.svg" alt="" class="skills-icons js-icon">
+                                <img src="img/icons/skills/js.svg" alt="js icon" class="skills-icons js-icon">
                             </div> 
                             JavaScript
                         </li>
@@ -123,13 +123,13 @@
                     <li class="menu-item first-level" id="contact" onclick="clearMenuItem();
                      clickMenuItem(`Contact`); changeContent(`.contact-main-content`);">
                      <div class="icon-div">
-                        <img src="img/icons/html.svg" alt="">
+                        <img src="img/icons/html.svg" alt="html icon">
                      </div>
                      contact.html</li>
                      <a href="Profile.pdf" target="_blank" id="cvLink">
                      <li class="menu-item first-level"> 
                         <div class="icon-div">
-                           <img src="img/icons/pdf.svg" alt="" id="pdf">
+                           <img src="img/icons/pdf.svg" alt="pdf icon" id="pdf">
                          </div>
                          CV.pdf 
                      </li>
@@ -173,6 +173,10 @@
                     <li>15</li>
                     <li>16</li>
                     <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
                 </ul>
             </div>
 
@@ -192,6 +196,9 @@
                 <span id="typed11"></span>
                 <span id="typed12"></span>
                 <span id="typed13"></span>
+                <span id="typed14"></span>
+                <span id="typed15"></span>
+                <span id="typed16"></span>
 
             </div>
             <div class="mob-wrapper">
@@ -269,7 +276,7 @@
            <div class="works-main-content">
                <div class="works-header">
                    <div class="works-image">
-                    <img src="img/works/Ellipse.png" class="img-fluid hehis" alt="">
+                    <img src="img/works/Ellipse.png" class="img-fluid hehis" alt="works header image">
                     <p id="mobText">All of my works you can see on this page</p>
                    </div>
                    
@@ -295,7 +302,7 @@
                             <li>
                                 
                                 <div class="works-border">
-                                    <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank"><img src="img/sites/construction.png" alt=""></a>
+                                    <a href="http://u429311.s18.wh1.su/WorkSite/index.html" target="_blank"><img src="img/sites/construction.png" alt="construction site icon"></a>
                                 </div>
                                 <div class="works-li-txt">
                                     <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
@@ -311,7 +318,7 @@
                             </li>
                             <li>
                                 <div class="works-border">
-                                    <img src="img/sites/toastmaster-site.jpg" alt="">
+                                    <img src="img/sites/toastmaster-site.jpg" alt="toastmaster site image">
                                 </div>
                                 <div class="works-li-txt">
                                     <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
@@ -327,7 +334,7 @@
                             </li>
                             <li>
                                 <div class="works-border">
-                                        <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank"><img src="img/sites/photo.png" alt=""></a>
+                                        <a href="http://u429311.s18.wh1.su/photo-site/main/index.html" target="_blank"><img src="img/sites/photo.png" alt="photo site image"></a>
                                 </div>
                                 <div class="works-li-txt">
                                     <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
@@ -343,7 +350,7 @@
                             </li>
                             <li>
                                 <div class="works-border">
-                                    <a href="http://u429311.s18.wh1.su/adventure/home/index.html" target="_blank"><img src="img/sites/adver.png" alt=""></a>
+                                    <a href="http://u429311.s18.wh1.su/adventure/home/index.html" target="_blank"><img src="img/sites/adver.png" alt="advertise site image"></a>
                                 </div>
                                 <div class="works-li-txt">
                                     <p>Gamus at magna non nunc tristique rhoncuseri tym. <br>
@@ -399,9 +406,9 @@
                         please contact me through the form below. Or write in one of the social networks.
                     </p>
                     <div class="mob-soc-icons">
-                        <p class="contact-mob-text contact-mob-links"><a href="https://www.linkedin.com/in/nikita-bekish-05b02b174/"><img src="img/icons/lin.svg" alt="">linkedin</a></p>
-                        <p class="contact-mob-text contact-mob-links"><a href="https://t.me/zxcnp"><img src="img/icons/tel.svg" alt="">telegram</a></p>
-                        <p class="contact-mob-text contact-mob-links"><a href="https://github.com/nikita-bekish"><img src="img/icons/git.svg" alt="">github</a></p>
+                        <p class="contact-mob-text contact-mob-links"><a href="https://www.linkedin.com/in/nikita-bekish-05b02b174/"><img src="img/icons/lin.svg" alt="linkedin icon">linkedin</a></p>
+                        <p class="contact-mob-text contact-mob-links"><a href="https://t.me/zxcnp"><img src="img/icons/tel.svg" alt="telegram icon">telegram</a></p>
+                        <p class="contact-mob-text contact-mob-links"><a href="https://github.com/nikita-bekish"><img src="img/icons/git.svg" alt="github icon">github</a></p>
                     </div>
                     <div class="contact-mob-form">
                         <form action="mail.php" method="POST" onsubmit="review(this); return false;">                                                                          <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
@@ -483,57 +490,8 @@
         
     </section>
 
-    <div class="site-navigation" id="services-page">
-            <div class="menu-block">
-                <a href="#" class="menu-btn">
-                    <span></span>
-                </a>
-        
-                <nav class="site-menu">
-                    <a href="#"><i class="fas fa-camera-retro"></i></a>
-                    <a href="#"><i class="fas fa-calendar-check"></i></a>
-                    <a href="#"><i class="fas fa-calculator"></i></a>
-                </nav>
-            </div>
-            
-    </div>
-    <div class="vscode-img">
-        <img src="favicon.png" alt="">
-    </div>
-   
     
-   <!-- <main class="mob-main" >
-            <p> <span id="firstP">My name is Nikita Bekish, I first heard about web development while studying at a college where I studied POIT, but I became interested in programming professionally while studying at BSUIR.</span><br /> 
-                <span id="secondP">After moving to Minsk, I decided to change something in my life. I began to develop my college skills.</span> 
-                Кстати говоря учился я на специальность ПОИТ и получил квалификацию техник-программист. <br />
-                <span id="thirdP">Начиная с середины июня 2018 я углубленно начал изучать HTML и CSS по видеокурсам, различным 
-                    обучающим приложениям и статьям. </span> Также не обходил стороной Javascript и библиотеку jQuery. По 
-                немногу начал осваивать Git. Познакомился с фреймворком Bootstrap. В одном из видеоуроков узнал
-                о препроцессоре Less и стал активно его использовать.
-                Конечно, верстка занятие не из самых веселых, но так или иначе я знаю к чему мне нужно стремиться
-                и моя мотивация не уменьшилась - скорее наоборот. 
-                Стоит сказать, что помимо своего хобби - на данный момент я прохожу обучение в БГУИР и параллельно 
-                прохожу распределение, потому некоторое понятие о C# и MSSQL у меня имеется. <br />
-                <span id="fourthP">В программировании</span> меня привлекает решение сложных задач потому что для этого нужно проявлять 
-                логику, смекалку и широкий кругозор. Чаще всего я пользуюсь наиболее коротким и рациональным путем. 
-                Но иногда нахожу парадоксальные решения и это то, что мне нравится.
-                <span id="firstP">My name is Nikita Bekish, I first heard about web development while studying at a college where I studied POIT, but I became interested in programming professionally while studying at BSUIR.</span><br /> 
-                <span id="secondP">After moving to Minsk, I decided to change something in my life. I began to develop my college skills.</span> 
-                Кстати говоря учился я на специальность ПОИТ и получил квалификацию техник-программист. <br />
-                <span id="thirdP">Начиная с середины июня 2018 я углубленно начал изучать HTML и CSS по видеокурсам, различным 
-                    обучающим приложениям и статьям. </span> Также не обходил стороной Javascript и библиотеку jQuery. По 
-                немногу начал осваивать Git. Познакомился с фреймворком Bootstrap. В одном из видеоуроков узнал
-                о препроцессоре Less и стал активно его использовать.
-                Конечно, верстка занятие не из самых веселых, но так или иначе я знаю к чему мне нужно стремиться
-                и моя мотивация не уменьшилась - скорее наоборот. 
-                Стоит сказать, что помимо своего хобби - на данный момент я прохожу обучение в БГУИР и параллельно 
-                прохожу распределение, потому некоторое понятие о C# и MSSQL у меня имеется. <br />
-                <span id="fourthP">В программировании</span> меня привлекает решение сложных задач потому что для этого нужно проявлять 
-                логику, смекалку и широкий кругозор. Чаще всего я пользуюсь наиболее коротким и рациональным путем. 
-                Но иногда нахожу парадоксальные решения и это то, что мне нравится.
-            </p>
-            <a href="#services-page">s</a>
-    </main>-->
+
     
     
     <script src="js/jquery-3.3.1.js"></script>

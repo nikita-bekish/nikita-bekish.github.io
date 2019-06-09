@@ -381,6 +381,19 @@ body {
     position: absolute;
     top: 313px;
 }
+#typed14 {
+    position: absolute;
+    top: 351px;
+}
+#typed15 {
+    position: absolute;
+    top: 371px;
+}
+#typed16 {
+    position: absolute;
+    top: 391px;
+}
+
 .aqua {
     color: #40E0D0;
 }
@@ -444,7 +457,7 @@ body {
 .html-contact {
     display: none;
     margin-left: 55px;
-
+    margin-top: -20px;
 }
 #cvLink {
     color: #b0b0b0;
@@ -607,7 +620,10 @@ body {
     -webkit-box-shadow: 0 0 0 30px #1E1E1E inset !important;
     color: #b0b0b0 !important;
 }
-
+#typed, #typed1,#typed2,#typed3,#typed4,#typed5,#typed6, 
+#typed7,#typed8,#typed9,#typed10,#typed11,#typed12,#typed13 {
+        user-select: none;
+}
 .name-content {
     font-family: monospace;
     font-size: 13px;
@@ -620,7 +636,7 @@ body {
 }
 .name-content input, .email-content input {
     background: #1E1E1E;
-    color: #fff;
+    color: #b0b0b0;
     border: none;
     font-family: monospace;
     outline: none;
