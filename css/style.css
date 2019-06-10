@@ -1274,12 +1274,17 @@ body {
     #works-items li a {
         line-height: 30px;
     }
+    #tab {
+        z-index: 2;
+    }
     .tab-line {
-        display: none;
         justify-content: flex-end;
         align-items: center;
+        z-index: 1;
+        box-shadow: none;
     }
     .tab-line p {
+        display: none;
         right: 0;
     }
     .first-level {
