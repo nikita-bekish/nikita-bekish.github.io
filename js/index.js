@@ -107,7 +107,7 @@ function widthExplorer () {
     mainContent = document.getElementById(`main-content`); 
 
     if (x && window.screen.width >= 768) {
-        id.style.width = '20%';
+        id.style.width = '21%';
 
         tab.style.left = '25%';
 
