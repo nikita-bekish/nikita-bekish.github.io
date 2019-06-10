@@ -1211,15 +1211,16 @@ body {
         line-height: 20px;
     }
     .works-li-txt {
-        display: none;
+        width: 100%;
+       
+    }
+    .works-li-txt p {
+        font-size: 12px;
     }
     .works-border {
-        border: none;
+        
     }
     .works-list li {
-        
-        justify-content: center;
-        align-items: center;
     }
     .works-caption {
         margin-left: 120px;
