@@ -6,9 +6,10 @@ var h = false;
 
 console.log(`Hi everyone on my site portfolio`);
 let iAm = `My name is Nikita Bekish.`;
-let str = `Novice frond-end devepoler.`;
+let str = `I am novice frond-end devepoler.`;
 console.log(iAm, str);
 console.log(`I am start learning frond-end in the mid of 2018, and now i want to share my results`);
+console.log(`On this site you can get to know me and my works better`);
 
 window.onload = function () {
     let item = document.getElementById(`AboutMe`);
