@@ -147,9 +147,6 @@ body {
     color: #B0B0B0;
     text-decoration: none;
 }
-#pdf {
-    filter: invert(1);
-}
 .icon-div {
     display: flex;
     justify-content: center;
