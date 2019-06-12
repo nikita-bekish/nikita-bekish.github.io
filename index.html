@@ -132,11 +132,12 @@
                      <div class="icon-div">
                         <img src="img/icons/html.svg" alt="html icon">
                      </div>
-                     contact.html</li>
-                     <a href="Profile.pdf" target="_blank" id="cvLink">
+                     contact.html
+                    </li>            
                      <li class="menu-item first-level"> 
                         <div class="icon-div">
                            <img src="img/icons/pdf.svg" alt="pdf icon" id="pdf">
+                           <a href="Profile.pdf" target="_blank" id="cvLink"></a>
                          </div>
                          CV.pdf 
                      </li>
@@ -450,11 +451,11 @@
                             </form>
                         </div>
                         <div class="email-content">                             
-                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="new-password" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()" onkeydown="if(event.keyCode==13) {changePowerShellContent(`.message-content`); clearBorderBottom(); borderBottom(`message`);}">                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
+                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="off" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()" onkeydown="if(event.keyCode==13) {changePowerShellContent(`.message-content`); clearBorderBottom(); borderBottom(`message`);}">                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
                         </div>
                         <div class="message-content">                            
                             <span>&gt;</span>                                                                                          <!--onkeypress="return runScript(`messageTextarea`, `messageSpan`, event);"-->                                                          
-                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="4" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"></textarea>
+                            <textarea placeholder="enter your message" id="messageTextarea" autocomplete="new-password" cols="50" rows="4" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"></textarea>
                             <button type="submit" id="btn">Send message</button>
                         </div>
                         <!--<div class="send-content">
