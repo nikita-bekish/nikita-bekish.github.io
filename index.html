@@ -450,11 +450,11 @@
                             </form>
                         </div>
                         <div class="email-content">                             
-                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="new-password" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.message-content`); clearBorderBottom(); borderBottom(`message`);}">                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
+                            &gt;<input placeholder="enter your email" type="email" id="emailInput" autocomplete="new-password" onblur="consoleSpan(this, `emailSpan`); putInfoInInput()" onkeydown="if(event.keyCode==13) {changePowerShellContent(`.message-content`); clearBorderBottom(); borderBottom(`message`);}">                                                                                              <!-- onkeypress="return runScript(`emailInput`, `emailSpan`, event);"-->               
                         </div>
                         <div class="message-content">                            
                             <span>&gt;</span>                                                                                          <!--onkeypress="return runScript(`messageTextarea`, `messageSpan`, event);"-->                                                          
-                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="4" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"; ></textarea>
+                            <textarea placeholder="enter your message" type="text" id="messageTextarea" autocomplete="new-password" cols="50" rows="4" onblur="consoleSpan(this, `messageSpan`); putInfoInInput();"></textarea>
                             <button type="submit" id="btn">Send message</button>
                         </div>
                         <!--<div class="send-content">
