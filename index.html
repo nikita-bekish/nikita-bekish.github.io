@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lane="en">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -220,7 +220,7 @@
                 <p class="mob-first-level-third"><i class="aqua">function</i>&nbsp;&nbsp;<span class="green">getInfoAboutMe</span>&nbsp;&nbsp;<span class="white">()&nbsp;&nbsp;{</span></p>
                 <p class="mob-second-level"><i class="aqua">let</i>&nbsp;&nbsp;years&nbsp;&nbsp;=&nbsp;&nbsp;<span class="purple">0</span>;</p>
                 <p class="mob-second-level"><span class="aqua"><i>console</i>.log</span>(<span class="gold">"On this site i want to share my results"</span>);</p>
-                <p class="mob-second-level"><span class="red">for&nbsp;&nbsp;</span>(<span class="aqua">var&nbsp;&nbsp;</span> days =&nbsp;&nbsp;<span class="purple">0</span>; days <= &nbsp;&nbsp;<span class="purple">365</span>;&nbsp;&nbsp;days<span class="red">++</span>) {</p>
+                <p class="mob-second-level"><span class="red">for&nbsp;&nbsp;</span>(<span class="aqua">var&nbsp;&nbsp;</span> days =&nbsp;&nbsp;<span class="purple">0</span>; days &lt;=&nbsp;&nbsp;<span class="purple">365</span>;&nbsp;&nbsp;days<span class="red">++</span>) {</p>
                 <p class="mob-third-level"><span class="aqua"><i>console</i>.log</span>(<span class="gold">"work hard!"</span>); <span class="grey">// I am here :)</span></p> 
                 <p class="mob-second-level">}</p>
                 <p class="mob-second-level">years<span class="red">++</span>;</p>
@@ -434,17 +434,15 @@
                 <div class="power-shell">
                     <div class="power-shell-tabs">
                         <p onclick="clearBorderBottom(); borderBottom(`name`); changePowerShellContent(`.name-content`);" id="name">name</p>
-                        <p onclick="clearBorderBottom(); borderBottom(`eMail`); changePowerShellContent(`.email-content`);" id="eMail" ;>e-mail</p>
+                        <p onclick="clearBorderBottom(); borderBottom(`eMail`); changePowerShellContent(`.email-content`);" id="eMail">e-mail</p>
                         <p onclick="clearBorderBottom(); borderBottom(`message`); changePowerShellContent(`.message-content`);" id="message">message</p>
-                        <!--<p onclick="clearBorderBottom(); borderBottom(`send`); changePowerShellContent(`.send-content`);" id="send">send message</p>
-                        -->
                     </div>
                 </div>
               
                     <div class="power-shell-content" id="shell">
                         <div class="name-content">
                             <form action="mail.php" autocomplete="off" method="POST" id="reviewForm" onsubmit="review(this); return false;">                                                                        <!--onkeypress="return runScript(`nameInput`, `nameSpan`, event);"-->                
-                                &gt;<input autocomplete="new-password" placeholder="enter your name" type="text" name="user_name" id="nameInput"  onblur="consoleSpan(this, `nameSpan`)"; onkeydown="if(event.keyCode==13) {changePowerShellContent(`.email-content`); clearBorderBottom(); borderBottom(`eMail`);}">
+                                &gt;<input autocomplete="new-password" placeholder="enter your name" type="text" name="user_name" id="nameInput" onblur="consoleSpan(this, `nameSpan`)" onkeydown="if(event.keyCode==13) {changePowerShellContent(`.email-content`); clearBorderBottom(); borderBottom(`eMail`);}">
                                 <input type="text" name="user_email" id="shadyEmail">
                                 <input type="text" name="user_text" id="shadyTextInfo">
                                 <button type="submit" id="shadyBtn">send</button>
