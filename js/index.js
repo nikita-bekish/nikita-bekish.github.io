@@ -286,7 +286,6 @@ function putInfoInInput() {
     shadyText.value = text.value;
 }
 
-
 $(`#btn`).click(function() {
     $(`#shadyBtn`).trigger("click");
 })
@@ -354,7 +353,7 @@ var typed1 = new Typed('#typed5', {
 })
 var typed1 = new Typed('#typed6', {
     strings: [
-        '<i class="aqua">let</i> years = <span class="purple">0</span>;'
+        '<i class="aqua">let</i> years = <span class="purple">1</span>;'
     ],
     typeSpeed: 20,
     startDelay: 7400,
@@ -399,7 +398,7 @@ var typed1 = new Typed('#typed10', {
 })
 var typed1 = new Typed('#typed11', {
     strings: [
-        'years<span class="red">++</span>;'
+        '<span class="red">return </span>years<span class="red">++</span>;'
     ],
     typeSpeed: 20,
     startDelay: 15000,
