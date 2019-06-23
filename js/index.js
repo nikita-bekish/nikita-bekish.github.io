@@ -371,7 +371,7 @@ var typed1 = new Typed('#typed7', {
 })
 var typed1 = new Typed('#typed8', {
     strings: [
-        '<span class="red">for</span> (<span class="aqua">let</span> days = <span class="purple">0</span>; days <= <span class="purple">365</span>; days<span class="red">++</span>) {'
+        '<span class="red">for</span> (<span class="aqua">let</span> days = <span class="purple">0</span>; days < <span class="purple">365</span>; days<span class="red">++</span>) {'
     ],
     typeSpeed: 20,
     startDelay: 11500,
